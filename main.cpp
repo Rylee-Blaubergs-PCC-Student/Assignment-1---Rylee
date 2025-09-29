@@ -1,12 +1,12 @@
 // ------------- FILE HEADER -------------
-// Author ✅:
-// Assignment ✅:
-// Date ✅:
-// Citations:
+// Author ✅: Rylee Blaubergs
+// Assignment ✅: #1
+// Date ✅: 9/28/25
+// Citations:  
 
 
 // ------------- ZYBOOKS SCORES -------------
-// Chapter ✅:
+// Chapter ✅: 1
 // Participation ✅:
 // Challenge ✅:
 // Labs ✅:
@@ -42,8 +42,12 @@ using namespace std;
 // Main function
 // https://en.cppreference.com/w/cpp/language/main_function.html
 int main(int argc, char* argv[]) {
-    cout << "Hello, World!" << endl;
-    return 0;
+    int workerID;
+    int hoursWorked;
+    int hourlyRate;
+    
+    
+    
 }
 
 // Function implementations (if any)
@@ -51,16 +55,21 @@ int main(int argc, char* argv[]) {
 
 // ------------- DESIGN -------------
 /*
-Program Name:
+Program Name: Weekly Payroll Program
 
 Program Description:
 
 Design:
 A. INPUT
-Define the input variables including name data type.
+INPUT Worker id as an INT
+INPUT Hours Worked as an INT
+INPUT Hourly Rate as an INT
+INPUT Federal Withholding Rate
 
 B. OUTPUT
-Define the output variables including data types.
+Total gross pay as an int
+Federal tax withholding as an int
+Net pay as an int
 
 C. CALCULATIONS
 Describe calculations used by algorithms in step D.
