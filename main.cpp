@@ -48,9 +48,34 @@ int main(int argc, char* argv[]) {
     int federalWithholdRate = 0;
 
     int grossPay = 0;
+    double federalWithholdPercent = 0.00;
     double taxRate = 0.00;
     double netPay = 0.00;
 
+    cout << "Welcome to my Weekly Payroll Program!" << endl;
+    cout << "Enter your employee ID number (numbers only): ";
+    cin >> workerID;
+    cout << "Enter number of hours worked (whole numbers): ";
+    cin >> hoursWorked;
+    cout << "Enter the hourly rate: ";
+    cin >> usdPerHour;
+    cout << "Enter the federal withholding rate: ";
+    cin >> federalWithholdRate;
+    cout << endl;
+    
+    grossPay = usdPerHour * hoursWorked;
+    federalWithholdPercent = federalWithholdRate / 100.00;
+    taxRate = grossPay * federalWithholdPercent;
+    netPay = grossPay - taxRate;
+    
+    cout << "Your Payroll Summary:" << endl;
+    cout << "Your total gross pay: " << "$" << grossPay << endl;
+    cout << "Federal Tax Withholding: " << "$" << taxRate << endl;
+    cout << "Net Pay: " << "$" << netPay << endl;
+    cout << endl;
+    
+    cout << "Thank you for using my Weekly Payroll program!"; 
+    return 0;
     
 }
 
