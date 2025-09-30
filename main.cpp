@@ -52,7 +52,7 @@ int main(int argc, char* argv[]) {
     double taxRate = 0.00;
     double netPay = 0.00;
 
-    cout << "Welcome to my Weekly Payroll Program!" << endl;
+    cout << "Welcome to my Weekly Payroll Program!!" << endl;
     cout << "Enter your employee ID number (numbers only): ";
     cin >> workerID;
     cout << "Enter number of hours worked (whole numbers): ";
@@ -74,7 +74,7 @@ int main(int argc, char* argv[]) {
     cout << "Net Pay: " << "$" << netPay << endl;
     cout << endl;
     
-    cout << "Thank you for using my Weekly Payroll program!"; 
+    cout << "Thank you for using my Weekly Payroll program!!"; 
     return 0;
     
 }
@@ -97,22 +97,79 @@ INPUT Federal Withholding Rate
 
 B. OUTPUT
 Total gross pay as an int
-Income tax withholding as an double
+Federal Withhold Percent as an double
+Tax Rate as an double
 Net pay as an double
 
+
 C. CALCULATIONS
-Describe calculations used by algorithms in step D.
-List all formulas.
-If there are no calculations needed, state there are no calculations.
+CALCULATE grossPay by usdPerHour * hoursWorked
+CALCULATE federalwithholdPercent by federalWithholdRate / 100.00
+CALCULATE taxRate by grossPay * federalWithholdPercent
+CALCULATE netPay by grossPay - taxRate
 
 D. LOGIC and ALGORITHMS
-Design the logic of your program using pseudocode or flowcharts.
-Use conditionals, loops, functions or array constructs.
-List the steps in transforming inputs into outputs.
+DECLARE integer workerID
+DECLARE integer hoursWorked
+DECLARE integer usdPerHour
+DECLARE integer federalWithholdRate
+DECLARE integer grossPay
+DECLARE double federalWithholdPercent
+DECLARE double taxRate
+DECLARE double netPay
+
+DISPLAY welcome message
+DISPLAY Enter your employee ID number (numbers only):
+INPUT workerID
+DISPLAY Enter number of hours worked (whole numbers):
+INPUT hoursWorked
+DISPLAY Enter the hourly rate:
+INPUT usdPerHour
+DISPLAY Enter the federal withholding rate:
+INPUT federalWithholdRate
+
+SET  grossPay = usdPerHour * hoursWorked;
+SET  federalWithholdPercent = federalWithholdRate / 100.00;
+SET  taxRate = grossPay * federalWithholdPercent;
+SET  netPay = grossPay - taxRate;
+
+DISPLAY Payroll header
+DISPLAY total gross pay
+DISPLAY federal tax withholding
+DISPLAY net pay
+
+DISPLAY Goodbye message
 https://github.com/Glen-Sasek-PCC-Instructor/2025-06-22/blob/main/Pseudocode-Reference.txt
 
 
 SAMPLE RUNS
-Copy from assignment document.
+Welcome to my Weekly Payroll program!!
+Enter your employee ID number (numbers only): 34567
+Enter number of hours worked (whole numbers): 40
+Enter the hourly rate: 17
+Enter the federal withholding rate: 15
+
+Your Payroll Summary:
+Total Gross Pay: $680
+Federal Tax Withholding: $102
+Net Pay: $578
+
+Thank you for using my Weekly Payroll program!!
+
+
+
+Welcome to my Weekly Payroll program!!
+Enter your employee ID number (numbers only): 12345
+Enter number of hours worked (whole numbers): 30
+Enter the hourly rate: 22
+Enter the federal withholding rate: 10
+
+Your Payroll Summary:
+Total Gross Pay: $660
+Federal Tax Withholding: $66
+Net Pay: $594
+
+Thank you for using my Weekly Payroll program!!
+
 
 */
