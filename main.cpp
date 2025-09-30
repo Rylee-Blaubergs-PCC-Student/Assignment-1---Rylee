@@ -2,19 +2,19 @@
 // Author ✅: Rylee Blaubergs
 // Assignment ✅: #1
 // Date ✅: 9/28/25
-// Citations:  
+// Citations:
 
 
 // ------------- ZYBOOKS SCORES -------------
 // Chapter ✅: 1
-// Participation ✅:
-// Challenge ✅:
-// Labs ✅:
+// Participation ✅: 65%
+// Challenge ✅: 70%
+// Labs ✅: 100%
 
 
 // ------------- DISCORD POSTS -------------
 // https://discord.com/invite/URYKKf8YHm
-// Count ✅:
+// Count ✅: 0
 // Links (Optional):
 
 
@@ -42,11 +42,15 @@ using namespace std;
 // Main function
 // https://en.cppreference.com/w/cpp/language/main_function.html
 int main(int argc, char* argv[]) {
-    int workerID;
-    int hoursWorked;
-    int hourlyRate;
-    
-    
+    int workerID = 0;
+    int hoursWorked = 0;
+    int usdPerHour = 0;
+    int federalWithholdRate = 0;
+
+    int grossPay = 0;
+    double taxRate = 0.00;
+    double netPay = 0.00;
+
     
 }
 
@@ -68,8 +72,8 @@ INPUT Federal Withholding Rate
 
 B. OUTPUT
 Total gross pay as an int
-Federal tax withholding as an int
-Net pay as an int
+Income tax withholding as an double
+Net pay as an double
 
 C. CALCULATIONS
 Describe calculations used by algorithms in step D.
